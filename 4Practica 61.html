@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 61-->
+
+<head>
+    <title>Practica 61</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        function cal(a, b, c) {
+            var resultado;
+            resultado = c(a, b);
+            return resultado;
+        }
+        var d;
+        var d = cal(7, 9, function(hp, dell) {
+            return hp + dell;
+        });
+        document.write('Esta es la suma:');
+        document.write('<br>');
+        document.write(d);
+        document.write('<br>');
+        var e = cal(7, 9, function(hp, dell) {
+            return hp - dell;
+        });
+        document.write('Esta es la resta:');
+        document.write('<br>');
+        document.write(e);
+        document.write('<br>');
+    </script>
+
+</body>
+
+</html>
